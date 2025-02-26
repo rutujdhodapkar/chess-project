@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --background-start: #f0f2f5;
+            --background-end: #e6e9ef;
+            --primary-text: #000000; /* Changed to black */
+            --secondary-text: #000000; /* Changed to black */
+            --hover-text: #000000; /* Changed to black */
+            --card-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            flex-direction: column; /* Added to allow footer at the bottom */
+            background-color: #dedede; /* Added background color */
+        }
+        .contact-wrapper {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap; /* Added to allow wrapping on small screens */
+        }
+        .contact-container, .owner-container {
+            background: #ffffff4b;
+            padding: 2rem;
+            border-radius: 30px;
+            box-shadow: var(--card-shadow);
+            text-align: center;
+            width: 500px;
+            aspect-ratio: 1;
+            -webkit-backdrop-filter: blur(10px); /* Added blur effect for Safari */
+            backdrop-filter: blur(10px); /* Added blur effect */
+        }
+        .contact-container h1 {
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+            color: var(--primary-text);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .contact-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact-container label {
+            font-size: 1rem;
+            color: var(--secondary-text);
+            text-align: left;
+        }
+        .contact-container input,
+        .contact-container textarea {
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-container button {
+            padding: 0.75rem;
+            font-size: 1rem;
+            color: #fff;
+            background-color: var(--primary-text);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-container button:hover {
+            background-color: var(--hover-text);
+        }
+        .owner-container h2 {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            color: var(--primary-text);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .owner-container p {
+            margin: 0.5rem 0;
+            font-size: 1.5rem; /* Increased font size for owner names */
+            color: var(--secondary-text);
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 1rem;
+            color: var(--secondary-text);
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .contact-container,
+            .owner-container {
+                width: 90vw;
+                aspect-ratio: auto; /* Adjust aspect ratio for small screens */
+                padding: 1.5rem;
+            }
+            .contact-container h1,
+            .owner-container h2 {
+                font-size: 2rem;
+            }
+            .contact-wrapper {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-wrapper">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <form method="post" action="mailto:rutujdhodapkar@gmail.com,vishalrpatil308@gmail.com,av7ism@gmail.com,omdevdattshelke@gmail.com?subject=message%20from%20chessAI%20project" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="owner-container">
+            <h2 style="color: #000000;">Project Owners</h2> <!-- Changed to black -->
+            <p style="color: #000000;">Rutuj Dhodapkar</p> <!-- Changed to black -->
+            <p style="color: #000000;">Vishal Patil</p> <!-- Changed to black -->
+            <p style="color: #000000;">Om Shelke</p> <!-- Changed to black -->
+            <p style="color: #000000;">Anurag Vaishnav</p> <!-- Changed to black -->
+        </div>
+    </div>
+    <footer>
+        <p style="color: #000000;">&copy; 2025 ChessAI Project. All rights reserved.</p> <!-- Changed to black -->
+        <p style="color: #000000;">Follow us on 
+            <a href="https://www.Linkdin.com" target="_blank" style="color: #000000; text-decoration: none;" rel="noopener" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Linkdin</a>, <!-- Changed to black -->
+            <a href="https://www.twitter.com" target="_blank" style="color: #000000; text-decoration: none;" rel="noopener" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Twitter</a>, <!-- Changed to black -->
+            <a href="https://www.instagram.com" target="_blank" style="color: #000000; text-decoration: none;" rel="noopener" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Instagram</a> <!-- Changed to black -->
+        </p>
+    </footer>
+</body>
+</html>

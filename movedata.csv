@@ -1,0 +1,62 @@
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,move analysis
+e4,e5,Bc4,c5,Qf3,b5,Qxf7#,e4,e5,Nf3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+tkEDhZUnlb,e4,e5,Qf3,c5,Bc4,b5,Qxf7#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Hi1Z6Pm6Ht,e4,e5,Qf3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+BEo5JvZxe9,e4,e5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+W7VvHwlffn,e4,e5,Qf3,Qf6,Qxf6,gxf6,Nf3,Nh6,Nh4,Nf5,exf5,h6,Bb5,h5,Ng6,c6,Nxh8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+lZBxAtNFUa,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+7PBMsAfg0X,f4,e5,e4,exf4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+LbgdQ0qt47,e4,e5,Nh3,Rg1,g6,Ng5,d5,Qxf7+,Nxf7,Nxf7,Kxf7,Rf4+,Kg8,Rxf8+,Qxf8,Bxb5,dxe4,Bc4+,Qf7,Bxf7+,Kxf7,Nc3,g5,Nd5,g4,Nxc7,Nxa8,gxf2+,Kxf2,e3+,Kxe3,e4,Nc7,Ke7,Nd5+,Kf8,d3,exd3,cxd3,a5,a4,Nc6,Ra3,Nd4,Kxd4,Rg8,Rb3,Rg6,Rb7,h6,Rb8+,Kg7,Rb7+,Kh8,Nf4,h5,Nxg6+,Kg8,b4,axb4,a5,b3,a6,b2,a7,b1=Q,a8=Q#,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ZcWGCnBh7a,e4,e5,f5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CKbA8qlpiz,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+gfm6NSoq0r,e5,Qf3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+18z91oqh3N,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+UGptQFqJrX,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+38nukch6S2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+JX7L9YTJHD,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TeGkgm69Gi,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PbSNiRF1rz,,f4,f5
+9puHHfoKfF,e4,Excellent Move
+Nm5IgKxy61,e4,Excellent Move
+y4vwOvn70c,f4,Inaccuracy,f5,Inaccuracy
+tjTRlg6996,e4,Excellent Move
+LOtCbSS5uX,e4,Excellent Move,e5,Excellent Move,g4,Blunder,Nh6,Blunder,Nf5,Invalid Move
+RfSMEMK6GK,e4,"Player: White | Move: e4 | Verdict: Excellent Move | Analysis: Played Eval: 29 centipawns vs Best Eval: 29 centipawns (Diff: 0) | Top moves: e2e4 (25 cp), d2d4 (24 cp), g1f3 (21 cp) | Move Differences: e2e4 diff: 4, d2d4 diff: 5, g1f3 diff: 8 | Best Move: e2e4"
+gCd4rClgoa,e4,Excellent Move
+f0ICpHIbSP,e4,Excellent Move
+Pg9Ap7YYj4,e5,Invalid Move
+pufpVlvBg5,e4,Excellent Move
+HZu6i6mc78,f4,Inaccuracy
+Vgn2Rvq0ny,e4,Excellent Move
+qln3BZlXSq,e4,name 'played_eval_str' is not defined
+gTh067IvrB,e4,Excellent Move
+fDcRdSct5a,e4,Excellent Move
+emYdyFXlXr,e4,Excellent Move,Nh6,Inaccuracy,cxd4,Invalid Move
+dKpZyFfyys,e4,"not enough values to unpack (expected 3, got 2)"
+qLlgiu1Teb,d4,Good Move
+0hvVZCKHBS
+0ymNSgRyQj,e4,
+2E5dzl2fIn,e4,Excellent Move,e5,Excellent Move
+TvSaYN0gYp,e4
+sGLvEzp5uY,e4
+CLqOMykkJc
+In5LHyGqGv,e4,e5
+YHlBt2vB3I,e4
+NGxb2phJiZ,e4
+mQvviluVwG,e4
+PYBNcsCdSN,Bc4,g5,Nxg5
+gbiMsuPIvx,Be3,e5,dxe5
+PZMa0NVLjQ,e4,e5,Qf3,f5,exf5
+ATRxMykbZf,e4,e5
+eOkTHKYrtj
+KWY6cXmvPK
+crkNZxhe0L,e4
+DhhCmoHz0y
+6NnWGmo1pS
+tXq0c4qARM
+lEFPQdMoF5,e4
+F3rsLxv6KA
+qhxYzJJfUL
+RTLiZMVRCz
+oJKN4gFhUG
+yFTEFEBkPg
