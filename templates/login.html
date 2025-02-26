@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #6b73ff, #000dff);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('/static/desktop.png');
+            background-size: cover;
+            background-position: center;
+        }
+        @media (max-width: 768px) {
+            body {
+                background-image: url('/static/mobile.png');
+            }
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px); /* Safari support */
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #f1f1f1;
+        }
+        .input-group {
+            margin: 20px 0;
+            position: relative;
+        }
+        input {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1em;
+            color: #333;
+        }
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 5px #6b73ff;
+        }
+        .btn {
+            width: 100%;
+            background: linear-gradient(90deg, #6b73ff, #000dff);
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin: 15px 0;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #5a63db, #000bbf);
+        }
+        .btn-google {
+            background: #fff;
+            color: #333;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 15px;
+        }
+        .btn-google img {
+            width: 20px;
+            height: auto;
+            margin-right: 10px;
+        }
+        .btn-google:hover {
+            background: #f1f1f1;
+        }
+        .link {
+            font-size: 0.9em;
+            color: #a8c0ff;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .notification {
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
+        }
+        .notification.error {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        .notification.success {
+            background-color: #28a745;
+            color: white;
+        }
+        /* New styling to position flash messages in the top-right corner */
+        #flash-message {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: auto;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="flash-message" class="notification"></div>
+
+    <div class="container" id="login-container">
+        <h1>Welcome Back!</h1>
+        <form action="/login" method="post">
+            <div class="input-group">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <button class="btn" id="login-btn">Login</button>
+        </form>
+        <p>or</p>
+        <button class="btn btn-google" id="google-login-btn">
+            <img src="/static/Google-Symbol.png" alt="Google" />
+            Continue with Google
+        </button>
+        <p>Don't have an account? <a class="link" href="#" id="sign-up-link">Sign up</a></p>
+    </div>
+
+    <div class="container" id="signup-container" style="display: none;">
+        <h1>Create Account</h1>
+        <form action="/signup" method="post">
+            <div class="input-group">
+                <input type="text" id="first-name" name="first_n" placeholder="First Name" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="last-name" name="last_n" placeholder="Last Name" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="signup-password" name="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <input type="email" id="signup-email" name="email" placeholder="Email" required>
+            </div>
+            <button class="btn" id="signup-btn">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+        // Toggle between login and signup containers
+        document.getElementById('sign-up-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('login-container').style.display = 'none';
+            document.getElementById('signup-container').style.display = 'block';
+        });
+
+        document.getElementById('google-login-btn').addEventListener('click', function() {
+            // Redirect to Google login page
+            window.location.href = 'https://accounts.google.com/signin';
+        });
+
+        function validateEmail(email) {
+            const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return re.test(email);
+        }
+
+        function validatePassword(password) {
+            return password.length >= 6; // Basic validation
+        }
+
+        // Disable all keys except for input, textarea, and button elements
+        document.addEventListener('keydown', function(event) {
+            const activeElement = document.activeElement;
+            if (activeElement.tagName !== 'INPUT' && activeElement.tagName !== 'TEXTAREA' && activeElement.tagName !== 'BUTTON') {
+                event.preventDefault();
+            }
+        });
+
+        // Disable right click
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // Disable F1 to F12 keys
+        document.addEventListener('keydown', function(event) {
+            if (event.key >= 'F1' && event.key <= 'F12') {
+                event.preventDefault();
+            }
+        });
+
+        // Function to get query parameter value
+        function getQueryParam(param) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(param);
+        }
+
+        // Handle flash messages and redirection after successful login
+        document.addEventListener("DOMContentLoaded", function(){
+            var status = getQueryParam("status");
+            var flashEl = document.getElementById("flash-message");
+
+            if(status === "login_success") {
+                // On successful login, immediately redirect using a relative URL suitable for cloud deployments.
+                var username = getQueryParam("username");
+                window.location.href = "/index.html?username=" + encodeURIComponent(username);
+            } else if(status === "signup_success") {
+                flashEl.innerText = "Signup successful.";
+                flashEl.classList.add("success");
+                flashEl.style.display = "block";
+            } else if(status === "error") {
+                flashEl.innerText = "Error: Something went wrong.";
+                flashEl.classList.add("error");
+                flashEl.style.display = "block";
+            }
+        });
+    </script>
+</body>
+</html>
